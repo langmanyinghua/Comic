@@ -5,6 +5,6 @@
 
     <dimen name="item_height">45dp</dimen>
 
-    <dimen name="main_buttom_txt_space_between">0dp</dimen>
+    <dimen name="main_buttom_txt_space_between">5dp</dimen>
     <dimen name="main_buttom_txt_size">10sp</dimen>
 </resources>

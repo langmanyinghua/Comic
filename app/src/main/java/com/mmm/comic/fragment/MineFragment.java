@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
+import com.mmm.comic.R;
+
 /**
  * Created by Administrator on 2017/2/8.
  */
@@ -24,14 +26,14 @@ public class MineFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-//        View view = inflater.inflate(R.layout.fragment_my, null);
-//        aboutme_rl = (RelativeLayout) view.findViewById(R.id.aboutme_rl);
-//        feedback_rl = (RelativeLayout) view.findViewById(R.id.feedback_rl);
-//        share_rl = (RelativeLayout) view.findViewById(R.id.share_rl);
-//        exit_rl = (RelativeLayout) view.findViewById(R.id.exit_rl);
-//        gallery = (Gallery) view.findViewById(R.id.gallery);
+        View view = inflater.inflate(R.layout.fragment_mine, null);
+//        aboutme_rl = (relativelayout) view.findviewbyid(r.id.aboutme_rl);
+//        feedback_rl = (relativelayout) view.findviewbyid(r.id.feedback_rl);
+//        share_rl = (relativelayout) view.findviewbyid(r.id.share_rl);
+//        exit_rl = (relativelayout) view.findviewbyid(r.id.exit_rl);
+//        gallery = (gallery) view.findviewbyid(r.id.gallery);
 //        return view;
-        return null;
+        return view;
     }
 
     @Override
@@ -60,9 +62,6 @@ public class MineFragment extends Fragment {
         });
 
     }
-
-
-
 
 
 }

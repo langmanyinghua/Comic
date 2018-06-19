@@ -23,6 +23,7 @@
         <activity android:name="com.mmm.comic.activity.KeFuActivity" />
         <activity android:name="com.mmm.comic.activity.WebActivity" />
         <activity android:name="com.mmm.comic.activity.IndexActivity" />
+        <activity android:name="com.mmm.comic.activity.HomeActivity" />
 
     </application>
 
