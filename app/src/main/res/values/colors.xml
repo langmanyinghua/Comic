@@ -11,4 +11,15 @@
     <color name="yuan">#a4a3a3</color>
     <color name="time">#efefef</color>
     <color name="slogan">#a9a8a8</color>
+
+    <color name="mkz_gray_selected">#19000000</color>
+    <color name="mkz_black1">#ff28292d</color>
+    <color name="mkz_black2">#ff666666</color>
+    <color name="mkz_black3">#ff999999</color>
+
+    <color name="mkz_red">#ffff7830</color>
+    <color name="mkz_red_dot">#ffff3a37</color>
+
+    <color name="white">#ffffff</color>
+
 </resources>

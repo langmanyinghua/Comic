@@ -4,6 +4,7 @@
     <string name="loading_bottom">18才未満の方には販売しておりません</string>
     <string name="notice_title">服务器异常</string>
 
+
     <string name="notice_content_game">你所在的网络屏蔽了我们的游戏服务器\n我们会尽快切换服务器，服务器恢复后根据影响时长补偿您游戏道具\n对不起，影响了您的游戏体验，请耐心等待</string>
     <string name="notice_content_comic">你所在的网络屏蔽了我们的漫画服务器\n我们会尽快切换服务器，服务器恢复后根据影响时长补偿您漫画道具\n对不起，影响了您的漫画体验，请耐心等待</string>
 
@@ -16,4 +17,9 @@
     <string name="toast_content_three_game">连接备用游戏服务器...</string>
     <string name="toast_content_three_comic">连接备用漫画服务器...</string>
     <string name="toast_content_four">备用服务器连接超时</string>
+
+
+
+    <string name="mkz_tab_home">首页</string>
+    <string name="mkz_tab_mine">我的</string>
 </resources>
