@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/mkz_gray_selected" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip">
+
+            <TextView
+                android:id="@id/tab_home"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:layout_weight="1.0"
+                android:drawablePadding="3.0dip"
+                android:drawableTop="@drawable/mkz_ic_tab_home_selector"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:text="@string/mkz_tab_home"
+                android:textColor="@color/mkz_text_color_tab_selector"
+                android:textSize="11.0sp" />
+
+            <TextView
+                android:id="@id/tab_category"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:layout_weight="1.0"
+                android:drawablePadding="3.0dip"
+                android:drawableTop="@drawable/mkz_ic_tab_category_selector"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:text="@string/mkz_tab_category"
+                android:textColor="@color/mkz_text_color_tab_selector"
+                android:textSize="11.0sp" />
+
+            <TextView
+                android:id="@id/tab_bookshelf"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:layout_weight="1.0"
+                android:drawablePadding="3.0dip"
+                android:drawableTop="@drawable/mkz_ic_tab_bookshelf_selector"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:text="@string/mkz_tab_bookshelf"
+                android:textColor="@color/mkz_text_color_tab_selector"
+                android:textSize="11.0sp" />
+
+            <RelativeLayout
+                android:id="@id/tab_mine"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@id/tv_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6.0dip"
+                    android:drawablePadding="3.0dip"
+                    android:drawableTop="@drawable/mkz_ic_tab_mine_selector"
+                    android:gravity="center_horizontal"
+                    android:includeFontPadding="false"
+                    android:text="@string/mkz_tab_mine"
+                    android:textColor="@color/mkz_text_color_tab_selector"
+                    android:textSize="11.0sp" />
+
+                <View
+                    android:id="@id/badge_mine"
+                    android:layout_width="8.0dip"
+                    android:layout_height="8.0dip"
+                    android:layout_marginLeft="3.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:layout_toRightOf="@id/tv_mine"
+                    android:background="@drawable/mkz_red_dot"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

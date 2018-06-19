@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Comic</string>
+    <string name="loading">加载中...</string>
+    <string name="loading_bottom">18才未満の方には販売しておりません</string>
+    <string name="notice_title">服务器异常</string>
+
+    <string name="notice_content_game">你所在的网络屏蔽了我们的游戏服务器\n我们会尽快切换服务器，服务器恢复后根据影响时长补偿您游戏道具\n对不起，影响了您的游戏体验，请耐心等待</string>
+    <string name="notice_content_comic">你所在的网络屏蔽了我们的漫画服务器\n我们会尽快切换服务器，服务器恢复后根据影响时长补偿您漫画道具\n对不起，影响了您的漫画体验，请耐心等待</string>
+
+    <string name="obtain_exclusive_rights_and_interests">获得专属权益</string>
+    <string name="feeback_content">反馈内容将在一个工作日内审核处理\n申请退款会在3-5个工作日内原路返回\n请耐心等待…</string>
+
+    <string name="toast_content_one_game">连接游戏服务器...</string>
+    <string name="toast_content_one_comic">连接漫画服务器...</string>
+    <string name="toast_content_two">服务器连接不上，切换备用服务器</string>
+    <string name="toast_content_three_game">连接备用游戏服务器...</string>
+    <string name="toast_content_three_comic">连接备用漫画服务器...</string>
+    <string name="toast_content_four">备用服务器连接超时</string>
+</resources>
