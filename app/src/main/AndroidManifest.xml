@@ -20,9 +20,18 @@
 
         <activity android:name="com.mmm.comic.activity.MainActivity" />
         <activity android:name="com.mmm.comic.activity.PayActivity" />
-        <activity android:name="com.mmm.comic.activity.KeFuActivity" />
+        <activity android:name=".activity.set.KeFuActivity" />
         <activity android:name="com.mmm.comic.activity.WebActivity" />
         <activity android:name="com.mmm.comic.activity.IndexActivity" />
+        <activity android:name="com.mmm.comic.activity.HomeActivity" />
+
+        <activity android:name="com.mmm.comic.activity.VIPActivity" />
+        <activity android:name="com.mmm.comic.activity.AccountActivity" />
+
+        <activity android:name="com.mmm.comic.activity.set.SetActivity" />
+        <activity android:name="com.mmm.comic.activity.set.AboutActivity" />
+        <activity android:name="com.mmm.comic.activity.set.HelpActivity" />
+        <activity android:name="com.mmm.comic.activity.set.HelpWebActivity" />
 
     </application>
 

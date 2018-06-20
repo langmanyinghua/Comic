@@ -1,52 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:focusable="true"
+    android:background="@color/mkz_gray1"
     android:focusableInTouchMode="true">
 
-    <ImageView
-        android:id="@+id/main_background"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/feedback" />
-
-    <RelativeLayout
-        android:id="@+id/top_tarbar_rl"
-        android:layout_width="match_parent"
-        android:layout_height="50dp">
-
-        <RelativeLayout
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:onClick="onClickBack">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:src="@mipmap/back" />
-
-        </RelativeLayout>
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerInParent="true"
-            android:layout_centerVertical="true"
-            android:layout_marginBottom="10dp"
-            android:gravity="center"
-            android:text="用户反馈"
-            android:textColor="#fff"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-    </RelativeLayout>
+    <include layout="@layout/design_navigation"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -63,7 +25,7 @@
             android:gravity="center"
             android:lineSpacingExtra="5dp"
             android:text="@string/feeback_content"
-            android:textColor="#ffffffff"
+            android:textColor="@color/mkz_gray8"
             android:textSize="14sp" />
 
         <EditText
@@ -76,8 +38,8 @@
             android:inputType="phone"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:textColor="@color/button"
-            android:textColorHint="@color/button"
+            android:textColor="@color/mkz_gray4"
+            android:textColorHint="@color/mkz_gray4"
             android:textSize="14sp" />
 
         <EditText
@@ -93,8 +55,8 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:paddingTop="10dp"
-            android:textColor="@color/button"
-            android:textColorHint="@color/yuan"
+            android:textColor="@color/mkz_gray4"
+            android:textColorHint="@color/mkz_gray4"
             android:textSize="14sp" />
 
         <Button
@@ -114,4 +76,4 @@
     </LinearLayout>
 
 
-</RelativeLayout>
+</LinearLayout>

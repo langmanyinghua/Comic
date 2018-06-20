@@ -1,7 +1,6 @@
 package com.mmm.comic.activity;
 
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -20,6 +19,7 @@ import android.widget.TextView;
 
 import com.mmm.comic.APP;
 import com.mmm.comic.R;
+import com.mmm.comic.activity.set.KeFuActivity;
 import com.mmm.comic.network.Helper;
 import com.mmm.comic.network.HttpCallBack;
 import com.mmm.comic.util.APPType;

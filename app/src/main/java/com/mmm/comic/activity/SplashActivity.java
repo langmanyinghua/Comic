@@ -19,6 +19,7 @@ import android.widget.TextView;
 
 import com.mmm.comic.APP;
 import com.mmm.comic.R;
+import com.mmm.comic.activity.set.SetActivity;
 import com.mmm.comic.network.Helper;
 import com.mmm.comic.util.ToastUtil;
 
@@ -29,7 +30,7 @@ public class SplashActivity extends AppCompatActivity {
     private Handler handler = new Handler();
 
     private int INTERNET_CODE = 1000;
-    private int TIME = 4;
+    private int TIME = 1;
     private TextView count_down_tv;
 
     @TargetApi(Build.VERSION_CODES.M)
@@ -85,7 +86,7 @@ public class SplashActivity extends AppCompatActivity {
 //                finish();
 //            }
 //        }, 4000);
-        startActivity(new Intent(SplashActivity.this, IndexActivity.class));
+        startActivity(new Intent(SplashActivity.this, HomeActivity.class));
         finish();
     }
 

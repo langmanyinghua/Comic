@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mkz_gray5"
+    android:orientation="vertical">
+
+    <include layout="@layout/design_navigation" />
+
+    <ListView
+        android:id="@+id/help_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0.0dip"
+        android:listSelector="@color/mkz_transparent" />
+</LinearLayout>

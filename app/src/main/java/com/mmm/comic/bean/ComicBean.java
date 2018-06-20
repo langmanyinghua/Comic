@@ -1,11 +1,12 @@
 package com.mmm.comic.bean;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * Created by 浪漫樱花 on 2018/6/19.
  */
-public class ComicBean {
+public class ComicBean implements Serializable{
     private String title;
     private String thumb;
     private String author;

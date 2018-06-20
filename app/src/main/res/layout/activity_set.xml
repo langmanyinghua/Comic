@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mkz_gray5"
+    android:orientation="vertical">
+
+    <include layout="@layout/design_navigation" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="12.0dip"
+                android:text="@string/mkz_read_setting"
+                android:textColor="#ff999999"
+                android:textSize="13.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mkz_white"
+                android:divider="@drawable/mkz_bg_list_divider"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <TextView
+                        android:id="@+id/read_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6.0dip"
+                        android:text="@string/mkz_setting_read_mode"
+                        android:textColor="@color/mkz_black1"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/read_mode"
+                        android:text="@string/mkz_setting_read_mode_switch_tip"
+                        android:textColor="@color/mkz_gray2"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/reel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/mkz_switch_reel_selector"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12.0dip"
+                        android:paddingRight="12.0dip"
+                        android:enabled="true"
+                        android:text="@string/mkz_setting_reel"
+                        android:textColor="@color/mkz_text_color_switch"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/pager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28.0dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/reel"
+                        android:background="@drawable/mkz_switch_pager_selector"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12.0dip"
+                        android:paddingRight="12.0dip"
+                        android:text="@string/mkz_setting_pager"
+                        android:textColor="@color/mkz_text_color_switch"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/quality_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="@string/mkz_read_quality"
+                        android:textColor="@color/mkz_black1"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_read_quality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="流畅"
+                        android:textColor="@color/mkz_text_color_switch"
+                        android:textSize="13.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="@string/mkz_setting_read_tip_switch"
+                        android:textColor="@color/mkz_black1"
+                        android:textSize="15.0sp" />
+
+                    <Switch
+                        android:id="@+id/read_tip_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchMinWidth="20.0dip"
+                        android:textOff=""
+                        android:textOn=""
+                        android:thumb="@drawable/mkz_switch_thumb"
+                        android:track="@drawable/mkz_switch_track" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <TextView
+                        android:id="@+id/volume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6.0dip"
+                        android:text="@string/mkz_setting_read_volume_switch"
+                        android:textColor="@color/mkz_black1"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/volume"
+                        android:text="@string/mkz_setting_read_volume_switch_tip"
+                        android:textColor="@color/mkz_gray2"
+                        android:textSize="12.0sp" />
+
+                    <Switch
+                        android:id="@+id/read_volume_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:checked="true"
+                        android:switchMinWidth="20.0dip"
+                        android:textOff=""
+                        android:textOn=""
+                        android:thumb="@drawable/mkz_switch_thumb"
+                        android:track="@drawable/mkz_switch_track" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="12.0dip"
+                android:text="@string/mkz_cache_setting"
+                android:textColor="#ff999999"
+                android:textSize="13.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.0dip"
+                android:background="@color/mkz_white"
+                android:divider="@drawable/mkz_bg_list_divider"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="@string/mkz_setting_cache_path"
+                        android:textColor="@color/mkz_black1"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cache_path"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/data/data/cache"
+                        android:textColor="@color/mkz_gray2"
+                        android:textSize="13.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cache_quality_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="@string/mkz_cache_quality"
+                        android:textColor="@color/mkz_black1"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cache_quality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="流畅"
+                        android:textColor="@color/mkz_text_color_switch"
+                        android:textSize="13.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="@string/mkz_setting_none_wifi_remainder"
+                        android:textColor="@color/mkz_black1"
+                        android:textSize="15.0sp" />
+
+                    <Switch
+                        android:id="@+id/none_wifi_remind_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchMinWidth="20.0dip"
+                        android:textOff=""
+                        android:textOn=""
+                        android:thumb="@drawable/mkz_switch_thumb"
+                        android:track="@drawable/mkz_switch_track" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="@string/mkz_setting_wifi_auto_cache"
+                        android:textColor="@color/mkz_black1"
+                        android:textSize="15.0sp" />
+
+                    <Switch
+                        android:id="@+id/wifi_auto_cache_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchMinWidth="20.0dip"
+                        android:textOff=""
+                        android:textOn=""
+                        android:thumb="@drawable/mkz_switch_thumb"
+                        android:track="@drawable/mkz_switch_track" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:background="@color/mkz_white"
+                android:divider="@drawable/mkz_bg_list_divider"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="@string/mkz_setting_push_notify"
+                        android:textColor="@color/mkz_black1"
+                        android:textSize="15.0sp" />
+
+                    <Switch
+                        android:id="@+id/push_notify_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchMinWidth="20.0dip"
+                        android:textOff=""
+                        android:textOn=""
+                        android:thumb="@drawable/mkz_switch_thumb"
+                        android:track="@drawable/mkz_switch_track" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_clear_cache"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginTop="6.0dip"
+                android:background="@color/mkz_white"
+                android:gravity="center_vertical"
+                android:onClick="onClickClearCache"
+                android:paddingLeft="12.0dip"
+                android:text="@string/mkz_setting_clear_cache"
+                android:textColor="@color/mkz_black1"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="12.0dip"
+                android:text="@string/mkz_other_setting"
+                android:textColor="#ff999999"
+                android:textSize="13.0sp" />
+
+            <LinearLayout
+                android:id="@+id/update_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@color/mkz_white"
+                android:gravity="center_vertical"
+                android:onClick="onClickUpdate"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:text="@string/mkz_check_update"
+                    android:textColor="@color/mkz_black1"
+                    android:textSize="15.0sp" />
+
+                <Space
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0" />
+
+                <View
+                    android:id="@+id/update_badge"
+                    android:layout_width="8.0dip"
+                    android:layout_height="8.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="12.0dip"
+                    android:background="@drawable/mkz_red_dot"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_current_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18.0dip"
+                    android:text="当前版本：1.0.24"
+                    android:textColor="@color/mkz_black3"
+                    android:textSize="13.0sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="12.0dip"
+                android:background="@color/mkz_divider1" />
+
+            <LinearLayout
+                android:id="@+id/about_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@color/mkz_white"
+                android:gravity="center_vertical"
+                android:onClick="onClickAbout"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:text="@string/mkz_about_us"
+                    android:textColor="@color/mkz_black1"
+                    android:textSize="15.0sp" />
+
+                <Space
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0" />
+
+                <ImageView
+                    android:layout_width="6.0dip"
+                    android:layout_height="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:src="@drawable/mkz_ic_arrow_right" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_logout"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginTop="12.0dip"
+                android:background="@color/mkz_white"
+                android:gravity="center"
+                android:text="@string/mkz_logout"
+                android:textColor="#ffff7830"
+                android:textSize="16.0sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+

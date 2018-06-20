@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mkz_gray1">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="160.0dip"
+            android:background="@color/mkz_white">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="160.0dip"
+                android:background="@drawable/mkz_mine_top_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/mine_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginTop="25.0dip"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/avatar_img"
+                        android:layout_width="50.0dip"
+                        android:layout_height="50.0dip"
+                        android:layout_marginLeft="12.0dip"
+                        android:src="@drawable/mkz_default_avatar" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="50.0dip"
+                        android:layout_marginLeft="12.0dip"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5.0dip"
+                            android:drawablePadding="6.0dip"
+                            android:text="萌萌哒"
+                            android:textColor="@color/mkz_white"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:id="@+id/tv_login_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1.0dip"
+                            android:textColor="@color/mkz_white"
+                            android:text="用户ID：0001"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/follow_layout"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_follow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="@color/mkz_white"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/mkz_follow"
+                            android:textColor="@color/mkz_white"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dip"
+                        android:layout_height="20.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/mkz_white" />
+
+                    <LinearLayout
+                        android:id="@+id/fans_layout"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_fans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="@color/mkz_white"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/mkz_fans"
+                            android:textColor="@color/mkz_white"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dip"
+                        android:layout_height="20.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/mkz_white" />
+
+                    <LinearLayout
+                        android:id="@+id/money_layout"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="0.00"
+                            android:textColor="@color/mkz_white"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/mkz_money"
+                            android:textColor="@color/mkz_white"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dip"
+                        android:layout_height="20.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/mkz_white" />
+
+                    <LinearLayout
+                        android:id="@+id/month_ticket_layout"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_month_ticket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="@color/mkz_white"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/mkz_month_ticket"
+                            android:textColor="@color/mkz_white"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/vip_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:background="@color/mkz_white">
+
+            <ImageView
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.0dip"
+                android:src="@drawable/mkz_left_vip" />
+
+            <TextView
+                android:id="@+id/tv_vip_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="44.0dip"
+                android:layout_marginTop="11.5dip"
+                android:text="@string/mkz_vip_state"
+                android:textColor="@color/mkz_black3"
+                android:textSize="11.0sp" />
+
+            <TextView
+                android:id="@+id/tv_vip_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_vip_label"
+                android:layout_marginLeft="44.0dip"
+                android:text="未开通VIP"
+                android:textColor="@color/mkz_black1"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/tv_get_vip_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30.0dip"
+                android:text="@string/mkz_buy_vip_tip"
+                android:textColor="@color/mkz_pink"
+                android:textSize="12.0sp" />
+
+            <ImageView
+                android:layout_width="6.0dip"
+                android:layout_height="12.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12.0dip"
+                android:src="@drawable/mkz_ic_arrow_right" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/account_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="6.0dip"
+            android:background="@color/mkz_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_marginLeft="12.0dip"
+                android:src="@drawable/mkz_left_account" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:text="@string/mkz_my_account"
+                android:textColor="@color/mkz_black1"
+                android:textSize="15.0sp" />
+
+            <Space
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" />
+
+            <ImageView
+                android:layout_width="6.0dip"
+                android:layout_height="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:src="@drawable/mkz_ic_arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="12.0dip"
+            android:background="@color/mkz_divider1" />
+
+        <LinearLayout
+            android:id="@+id/message_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:background="@color/mkz_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_marginLeft="12.0dip"
+                android:src="@drawable/mkz_ic_left_message" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:text="@string/mkz_message_title"
+                android:textColor="@color/mkz_black1"
+                android:textSize="15.0sp" />
+
+            <Space
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" />
+
+            <View
+                android:id="@+id/message_badge"
+                android:layout_width="8.0dip"
+                android:layout_height="8.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="12.0dip"
+                android:background="@drawable/mkz_red_dot"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="6.0dip"
+                android:layout_height="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:src="@drawable/mkz_ic_arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/feedback_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="6.0dip"
+            android:background="@color/mkz_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_marginLeft="12.0dip"
+                android:src="@drawable/mkz_ic_left_feedback" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:text="@string/mkz_feedback_title"
+                android:textColor="@color/mkz_black1"
+                android:textSize="15.0sp" />
+
+            <Space
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" />
+
+            <ImageView
+                android:layout_width="6.0dip"
+                android:layout_height="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:src="@drawable/mkz_ic_arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="12.0dip"
+            android:background="@color/mkz_divider1" />
+
+        <LinearLayout
+            android:id="@+id/rate_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:background="@color/mkz_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_marginLeft="12.0dip"
+                android:src="@drawable/mkz_ic_left_score" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:text="@string/mkz_rate_title"
+                android:textColor="@color/mkz_black1"
+                android:textSize="15.0sp" />
+
+            <Space
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" />
+
+            <ImageView
+                android:layout_width="6.0dip"
+                android:layout_height="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:src="@drawable/mkz_ic_arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="12.0dip"
+            android:background="@color/mkz_divider1" />
+
+        <LinearLayout
+            android:id="@+id/help_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:background="@color/mkz_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_marginLeft="12.0dip"
+                android:src="@drawable/mkz_ic_left_help" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:text="@string/mkz_help_title"
+                android:textColor="@color/mkz_black1"
+                android:textSize="15.0sp" />
+
+            <Space
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" />
+
+            <ImageView
+                android:layout_width="6.0dip"
+                android:layout_height="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:src="@drawable/mkz_ic_arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="12.0dip"
+            android:background="@color/mkz_divider1" />
+
+        <LinearLayout
+            android:id="@+id/setting_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:background="@color/mkz_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_marginLeft="12.0dip"
+                android:src="@drawable/mkz_ic_left_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:text="@string/mkz_setting_title"
+                android:textColor="@color/mkz_black1"
+                android:textSize="15.0sp" />
+
+            <Space
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" />
+
+            <ImageView
+                android:layout_width="6.0dip"
+                android:layout_height="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:src="@drawable/mkz_ic_arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="6.0dip"
+            android:layout_marginLeft="0.0dip" />
+    </LinearLayout>
+</ScrollView>
