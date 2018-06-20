@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\choose.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\mipmap-xxhdpi\\choose.png"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\back.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\mipmap-xxhdpi\\back.png"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    }
+]

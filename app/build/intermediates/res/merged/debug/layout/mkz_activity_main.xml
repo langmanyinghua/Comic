@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/index_fragment"
+        android:name="com.mmm.comic.fragment.IndexFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_buttom_ll" />
+
+    <fragment
+        android:id="@+id/class_fragment"
+        android:name="com.mmm.comic.fragment.ClassFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_buttom_ll" />
+
+    <fragment
+        android:id="@+id/bookbox_fragment"
+        android:name="com.mmm.comic.fragment.BookBoxFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_buttom_ll" />
+
+    <fragment
+        android:id="@+id/mine_fragment"
+        android:name="com.mmm.comic.fragment.MineFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_buttom_ll" />
+
+    <LinearLayout
+        android:id="@+id/main_buttom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentTop="true"
+                android:background="#b2b2b2" />
+
+            <RadioButton
+                android:id="@+id/library_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:checked="true"
+                android:drawablePadding="@dimen/main_buttom_txt_space_between"
+                android:drawableTop="@drawable/main_library_selectback"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:text="首页"
+                android:textColor="@color/color_main_tab"
+                android:textSize="@dimen/main_buttom_txt_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentTop="true"
+                android:background="#b2b2b2" />
+
+            <RadioButton
+                android:id="@+id/box_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:drawablePadding="@dimen/main_buttom_txt_space_between"
+                android:drawableTop="@drawable/main_box_selectback"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:text="分类"
+                android:textColor="@color/color_main_tab"
+                android:textSize="@dimen/main_buttom_txt_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentTop="true"
+                android:background="#b2b2b2" />
+
+            <RadioButton
+                android:id="@+id/my_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:drawablePadding="@dimen/main_buttom_txt_space_between"
+                android:drawableTop="@drawable/main_my_selectback"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:text="书架"
+                android:textColor="@color/color_main_tab"
+                android:textSize="@dimen/main_buttom_txt_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentTop="true"
+                android:background="#b2b2b2" />
+
+            <RadioButton
+                android:id="@+id/my_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:drawablePadding="@dimen/main_buttom_txt_space_between"
+                android:drawableTop="@drawable/main_my_selectback"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:text="我的"
+                android:textColor="@color/color_main_tab"
+                android:textSize="@dimen/main_buttom_txt_size" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
