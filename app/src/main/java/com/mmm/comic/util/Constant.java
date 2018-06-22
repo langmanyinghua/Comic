@@ -13,6 +13,7 @@ public class Constant {
     private static final String IP = "http://api.mailuoli.com/";
     public static String ORDER_ID = "";
     public static final String IS_PAY = "isPay";
+    public static final String IS_FIST = "isFirst";
     public static List<String> PM = new ArrayList<>();
     public static final String APPSRC = "5b1925e9dc5c793aaa383250";
 

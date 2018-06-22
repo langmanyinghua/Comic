@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_rl"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip">
+
+    <View
+        android:id="@+id/top_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/mkz_divider1" />
+
+    <View
+        android:id="@id/spacer"
+        android:layout_width="12.0dip"
+        android:layout_height="fill_parent" />
+
+    <TextView
+        android:id="@+id/tv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="14.0dip"
+        android:layout_marginRight="9.0dip"
+        android:layout_marginTop="9.0dip"
+        android:layout_toRightOf="@id/spacer"
+        android:background="@drawable/mkz_vip_tag_bg"
+        android:gravity="center"
+        android:paddingLeft="3.0dip"
+        android:paddingRight="3.0dip"
+        android:text="推荐"
+        android:textColor="@color/mkz_white"
+        android:textSize="10.0sp" />
+
+    <TextView
+        android:id="@id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="21.0dip"
+        android:layout_marginTop="5.5dip"
+        android:layout_toRightOf="@id/tv_tag"
+        android:gravity="center"
+        android:textColor="@color/mkz_black1"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/tv_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="18.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginLeft="12.0dip"
+        android:gravity="center"
+        android:textColor="@color/mkz_black3"
+        android:textSize="12.0sp" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12.0dip"
+        android:textColor="@color/mkz_red"
+        android:textSize="18.0sp" />
+
+    <View
+        android:id="@+id/bottom_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mkz_divider1" />
+</RelativeLayout>

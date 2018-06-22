@@ -4,16 +4,20 @@
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\feedback.png"
     },
     {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mkz_pic_boot_img3.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\mkz_pic_boot_img3.png"
+    },
+    {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mkz_switch_thumb.xml",
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\mkz_switch_thumb.xml"
     },
     {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mkz_switch_pager_no_selector.xml",
-        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\mkz_switch_pager_no_selector.xml"
-    },
-    {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\custome_pay_item.xml",
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\custome_pay_item.xml"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mkz_vip_tag_bg.xml",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\mkz_vip_tag_bg.xml"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\custome_pay.xml",
@@ -32,20 +36,20 @@
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mkz_switch_reel_selector.xml",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\mkz_switch_reel_selector.xml"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mkz_switch_reel_selector.xml",
-        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\mkz_switch_reel_selector.xml"
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\custome_button_d.xml",
@@ -56,16 +60,16 @@
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mkz_pic_boot_img2.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\mkz_pic_boot_img2.png"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_class_tab_p.xml",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\shape_class_tab_p.xml"
+    },
+    {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_class_tab_bg_n.xml",
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\shape_class_tab_bg_n.xml"
-    },
-    {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
-        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\notification_icon_background.xml"
-    },
-    {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\splash_animation.xml",
@@ -76,6 +80,14 @@
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\custome_button.xml"
     },
     {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
+        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mkz_bg_web_progress.xml",
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\mkz_bg_web_progress.xml"
     },
@@ -84,12 +96,12 @@
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\drawable\\design_fab_background.xml"
     },
     {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\splash.png",
-        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\splash.png"
-    },
-    {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\splash.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\splash.png"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
@@ -100,8 +112,8 @@
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_ic_visibility.xml",
-        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.0\\res\\drawable\\design_ic_visibility.xml"
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_point_normal.xml",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\shape_point_normal.xml"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
@@ -136,12 +148,12 @@
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\mkz_bg_btn_red_small.xml"
     },
     {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\home_index_selectback.xml",
-        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\home_index_selectback.xml"
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_class_tab_n.xml",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\shape_class_tab_n.xml"
     },
     {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ratingbar_small_material.xml"
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\home_index_selectback.xml",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\home_index_selectback.xml"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\anim.xml",
@@ -150,6 +162,10 @@
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mkz_bg_btn_pay_disable.xml",
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\mkz_bg_btn_pay_disable.xml"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_class_tab_bg_p.xml",
@@ -162,6 +178,10 @@
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mkz_switch_track.xml",
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\mkz_switch_track.xml"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_point_selected.xml",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\shape_point_selected.xml"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
@@ -208,20 +228,28 @@
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\selector_class_tab_bg.xml"
     },
     {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_tab_indicator_material.xml"
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\payoptation_list_item_bg.xml",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\payoptation_list_item_bg.xml"
     },
     {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
-        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ratingbar_material.xml"
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\heat.png",
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\heat.png"
     },
     {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\progressbar_loading.png",
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\progressbar_loading.png"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mkz_switch_pager_selector.xml",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\mkz_switch_pager_selector.xml"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
@@ -232,16 +260,16 @@
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mkz_switch_pager_selector.xml",
-        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\mkz_switch_pager_selector.xml"
-    },
-    {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\list_item_bg.xml",
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\list_item_bg.xml"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_point_selector.xml",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\shape_point_selector.xml"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
@@ -276,10 +304,6 @@
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\mkz_red_dot.xml"
     },
     {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mkz_switch_reel_no_selector.xml",
-        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\mkz_switch_reel_no_selector.xml"
-    },
-    {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_cab_background_top_material.xml"
     },
@@ -292,6 +316,10 @@
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\pay.png"
     },
     {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_class_tab.xml",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\selector_class_tab.xml"
+    },
+    {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_seekbar_track_material.xml"
     },
@@ -300,12 +328,16 @@
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\heat_bg.xml"
     },
     {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_library_selectback.xml",
-        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\main_library_selectback.xml"
-    },
-    {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mkz_pic_boot_img4.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\mkz_pic_boot_img4.png"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mkz_pic_boot_img1.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable\\mkz_pic_boot_img1.png"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",

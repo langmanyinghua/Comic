@@ -23,8 +23,10 @@
     <color name="background_material_light">@color/material_grey_50</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
-    <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
-    <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
+    <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light
+    </color>
+    <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark
+    </color>
     <color name="bright_foreground_material_dark">@android:color/white</color>
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
@@ -145,6 +147,9 @@
     <color name="umeng_socialize_ucenter_bg">#ffeeeeee</color>
     <color name="umeng_socialize_web_bg">#fff4f4f4</color>
 
+    <color name="payopation_choose">#1aff7830</color>
+
     <color name="class_tab_line">#f3f3f3</color>
     <color name="class_tab_text_n">#8e8e8e</color>
+    <color name="class_detail_status">#88000000</color>
 </resources>

@@ -21,6 +21,8 @@ import com.mmm.comic.APP;
 import com.mmm.comic.R;
 import com.mmm.comic.activity.set.SetActivity;
 import com.mmm.comic.network.Helper;
+import com.mmm.comic.util.Constant;
+import com.mmm.comic.util.PreferenceUtils;
 import com.mmm.comic.util.ToastUtil;
 
 /**
@@ -28,10 +30,11 @@ import com.mmm.comic.util.ToastUtil;
  */
 public class SplashActivity extends AppCompatActivity {
     private Handler handler = new Handler();
-
     private int INTERNET_CODE = 1000;
-    private int TIME = 1;
+    private int TIME = 4;
     private TextView count_down_tv;
+    private ValueAnimator valueAnimator;
+    private Boolean isJump = false;
 
     @TargetApi(Build.VERSION_CODES.M)
     @Override
@@ -57,14 +60,15 @@ public class SplashActivity extends AppCompatActivity {
         }
     }
 
-
     private void setOnClick() {
         count_down_tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                isJump = true;
                 toMain();
             }
         });
+
     }
 
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
@@ -79,21 +83,21 @@ public class SplashActivity extends AppCompatActivity {
 
     public void toMain() {
         Helper.start();
-//        handler.postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//                startActivity(new Intent(SplashActivity.this, MainActivity.class));
-//                finish();
-//            }
-//        }, 4000);
-        startActivity(new Intent(SplashActivity.this, HomeActivity.class));
+        if (PreferenceUtils.getPrefBoolean(this, Constant.IS_FIST, true)) {
+            // 第一次打开app
+            PreferenceUtils.setPrefBoolean(this, Constant.IS_FIST, false);
+            startActivity(new Intent(SplashActivity.this, IntroduceActivity.class));
+        } else {
+            // 非第一次打开app
+            startActivity(new Intent(SplashActivity.this, HomeActivity.class));
+        }
         finish();
     }
 
 
     //验证码倒计时
     public void starAnimator(final TextView textview) {
-        final ValueAnimator valueAnimator = ValueAnimator.ofInt(TIME, 0);
+        valueAnimator = ValueAnimator.ofInt(TIME, 0);
         valueAnimator.setDuration(TIME * 1000);
         valueAnimator.setInterpolator(new LinearInterpolator());
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
@@ -107,7 +111,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void onAnimationEnd(Animator animation) {
                 super.onAnimationEnd(animation);
-                toMain();
+                if (!isJump) toMain();
             }
         });
         valueAnimator.start();

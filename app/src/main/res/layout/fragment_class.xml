@@ -35,16 +35,37 @@
     </LinearLayout>
 
     <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/class_tab_line" />
+        android:id="@+id/class_tab_line"
+        style="@style/HorizontalLineStyle" />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/class_recyclerview"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:horizontalSpacing="10dp"
-        android:numColumns="3"
-        android:verticalSpacing="10dp" />
+        android:layout_height="wrap_content">
 
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/class_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:id="@+id/class_pull_view"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/mkz_ic_red_down"
+                android:gravity="center"
+                android:text="最新"
+                android:textColor="@color/mkz_red" />
+        </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>

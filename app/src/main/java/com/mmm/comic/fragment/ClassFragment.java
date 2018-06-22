@@ -1,5 +1,6 @@
 package com.mmm.comic.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
@@ -8,37 +9,32 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.mmm.comic.R;
+import com.mmm.comic.activity.ClassDetailActivity;
+import com.mmm.comic.base.recycler.SpaceClassItemDecoration;
 import com.mmm.comic.base.recycler.SpaceItemDecoration;
 import com.mmm.comic.bean.ComicBean;
 import com.mmm.comic.bean.TabBead;
+import com.mmm.comic.window.ClassTabWindow;
 import com.zhy.adapter.recyclerview.CommonAdapter;
+import com.zhy.adapter.recyclerview.MultiItemTypeAdapter;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 import com.zhy.adapter.recyclerview.wrapper.HeaderAndFooterWrapper;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by Administrator on 2017/2/8.
  */
 public class ClassFragment extends Fragment {
-
-    private RelativeLayout aboutme_rl;
-    private RelativeLayout feedback_rl;
-    private RelativeLayout share_rl;
-    private RelativeLayout exit_rl;
     private View view;
     private RecyclerView mRecyclerView;
     private View mHeadView;
@@ -46,47 +42,34 @@ public class ClassFragment extends Fragment {
     private CommonAdapter<ComicBean> mAdapter;
     private RecyclerView mHeadRecyclerView;
     private int index;
-    private RadioButton radioButton;
-    private Map<TabBead, Boolean> tabMap;
-    private TabBead tabBead;
-    //
-//    public ChioseChildGalleryAdapter chioseChildGalleryAdapter;
-//    private ButtomDialog buttomDialog;
-//    public MainActivity activity;
-//    private Gallery gallery;
+    private LinearLayout mPullView;
+    private View tabLine;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_class, null);
-//        aboutme_rl = (RelativeLayout) view.findViewById(R.id.aboutme_rl);
-//        feedback_rl = (RelativeLayout) view.findViewById(R.id.feedback_rl);
-//        share_rl = (RelativeLayout) view.findViewById(R.id.share_rl);
-//        exit_rl = (RelativeLayout) view.findViewById(R.id.exit_rl);
-//        gallery = (Gallery) view.findViewById(R.id.gallery);
-//        return view;
         return view;
     }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-//        activity = (MainActivity) getActivity();
-//        chioseChildGalleryAdapter = new ChioseChildGalleryAdapter(getContext(), Constant.user.getBaby());
-//        setGallery();
-//        setCurrGallery();
-//        initEvent();
+
         init();
     }
 
     private void init() {
         initView();
         initData();
+        initEvent();
     }
 
     private void initView() {
         mRecyclerView = view.findViewById(R.id.class_recyclerview);
+        mPullView = view.findViewById(R.id.class_pull_view);
+        tabLine = view.findViewById(R.id.class_tab_line);
         gridLayoutManager = new GridLayoutManager(getActivity(), 3);
-        mRecyclerView.addItemDecoration(new SpaceItemDecoration(10));
+        mRecyclerView.addItemDecoration(new SpaceClassItemDecoration(20, 3));
         mRecyclerView.setLayoutManager(gridLayoutManager);
         mHeadView = View.inflate(getActivity(), R.layout.class_tab_head, null);
         RadioButton mTypeAll = mHeadView.findViewById(R.id.tab_type_all);
@@ -144,8 +127,6 @@ public class ClassFragment extends Fragment {
         textList.add(new TabBead("热血", false));
         textList.add(new TabBead("架空", false));
         textList.add(new TabBead("后宫", false));
-        tabMap = new HashMap<>();
-        tabBead = textList.get(0);
         index = 0;
         CommonAdapter<TabBead> tAdapter = new CommonAdapter<TabBead>(getActivity(), R.layout.adapter_tab_text, textList) {
             @Override
@@ -162,7 +143,6 @@ public class ClassFragment extends Fragment {
                             notifyItemChanged(index);
                             notifyItemChanged(position);
                             index = position;
-//                            notifyDataSetChanged();
                         }
                     }
                 });
@@ -178,25 +158,48 @@ public class ClassFragment extends Fragment {
             mButton.setTextColor(getActivity().getResources().getColor(R.color.mkz_red));
         } else {
             mButton.setBackgroundResource(R.drawable.shape_class_tab_bg_n);
-            mButton.setTextColor(getActivity().getResources().getColor(R.color.class_tab_text_n));
+            mButton.setTextColor(getActivity().getResources().getColor(R.color.mkz_black2));
         }
     }
 
     private void initEvent() {
-        aboutme_rl.setOnClickListener(new View.OnClickListener() {
+        mAdapter.setOnItemClickListener(new MultiItemTypeAdapter.OnItemClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onItemClick(View view, RecyclerView.ViewHolder holder, int position) {
+                getActivity().startActivity(new Intent(getActivity(), ClassDetailActivity.class));
+            }
+
+            @Override
+            public boolean onItemLongClick(View view, RecyclerView.ViewHolder holder, int position) {
+                return false;
+            }
+        });
+        mRecyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+                super.onScrollStateChanged(recyclerView, newState);
+                RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
+                //判断是当前layoutManager是否为LinearLayoutManager
+                // 只有LinearLayoutManager才有查找第一个和最后一个可见view位置的方法
+                if (layoutManager instanceof LinearLayoutManager) {
+                    LinearLayoutManager linearManager = (LinearLayoutManager) layoutManager;
+                    //获取第一个可见view的位置
+                    int firstItemPosition = linearManager.findFirstVisibleItemPosition();
+                    if (firstItemPosition > 0) {
+                        mPullView.setVisibility(View.VISIBLE);
+                    } else if (mPullView.getVisibility() == View.VISIBLE) {
+                        mPullView.setVisibility(View.GONE);
+                    }
+                }
 
             }
         });
-        //意见反馈
-        feedback_rl.setOnClickListener(new View.OnClickListener() {
+        mPullView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                ClassTabWindow.getInstance(getActivity()).onShow(tabLine);
             }
         });
-
     }
 
 

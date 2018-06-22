@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:2:1-38:12
+ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:2:1-42:12
 	package
 		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:3:5-28
 		INJECTED from F:\resource\Comic\app\src\main\AndroidManifest.xml
@@ -14,11 +14,11 @@ ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from F:\resource\Comic\app\src\main\AndroidManifest.xml
 		INJECTED from F:\resource\Comic\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:4:5-67
+ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:6:5-36:19
+ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:7:5-40:19
 MERGED from [com.android.support:appcompat-v7:25.3.1] F:\resource\Comic\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:25.3.1] F:\resource\Comic\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.1\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] F:\resource\Comic\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.1\AndroidManifest.xml:29:5-20
@@ -107,21 +107,21 @@ MERGED from [com.android.support:support-compat:25.3.1] F:\resource\Comic\app\bu
 MERGED from [com.android.support:support-core-ui:25.3.1] F:\resource\Comic\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.3.1\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] F:\resource\Comic\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.1\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:11:9-41
 	android:supportsRtl
-		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:12:9-35
 	android:allowBackup
-		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:9:9-35
 	android:icon
-		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:10:9-43
 	android:theme
-		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:12:9-40
+		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:13:9-43
 	android:name
-		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:7:9-28
+		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:8:9-28
 activity#com.mmm.comic.activity.SplashActivity
-ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:13:9-19:20
+ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:14:9-19:20
 	android:name
-		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:14:13-65
+		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:14:19-71
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:15:13-18:29
 action#android.intent.action.MAIN
@@ -164,22 +164,32 @@ activity#com.mmm.comic.activity.AccountActivity
 ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:29:9-75
 	android:name
 		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:29:19-72
+activity#com.mmm.comic.activity.ClassDetailActivity
+ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:30:9-32:55
+	android:theme
+		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:32:13-52
+	android:name
+		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:31:13-70
+activity#com.mmm.comic.activity.IntroduceActivity
+ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:33:9-77
+	android:name
+		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:33:19-74
 activity#com.mmm.comic.activity.set.SetActivity
-ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:31:9-75
+ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:35:9-75
 	android:name
-		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:31:19-72
+		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:35:19-72
 activity#com.mmm.comic.activity.set.AboutActivity
-ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:32:9-77
+ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:36:9-77
 	android:name
-		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:32:19-74
+		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:36:19-74
 activity#com.mmm.comic.activity.set.HelpActivity
-ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:33:9-76
+ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:37:9-76
 	android:name
-		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:33:19-73
+		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:37:19-73
 activity#com.mmm.comic.activity.set.HelpWebActivity
-ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:34:9-79
+ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:38:9-79
 	android:name
-		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:34:19-76
+		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:38:19-76
 uses-sdk
 INJECTED from F:\resource\Comic\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:25.3.1] F:\resource\Comic\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\AndroidManifest.xml:21:5-23:78

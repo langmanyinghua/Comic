@@ -6,7 +6,8 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="160dp">
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp">
 
         <ImageView
             android:id="@+id/item_class_image"
@@ -22,7 +23,7 @@
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:textColor="@android:color/white"
-            android:textSize="13sp" />
+            android:textSize="11sp" />
     </RelativeLayout>
 
     <TextView
@@ -30,6 +31,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
-        android:textColor="@color/mkz_read_status_bg" />
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:textColor="@color/mkz_black1" />
 </LinearLayout>

@@ -26,15 +26,9 @@ import java.util.List;
  * Created by panlaixing on 2018/6/19.
  */
 public class IndexItemFragment extends Fragment {
-    public final String title;
     private ListView listView;
     private CommonAdapter commonAdapter;
     private List<ComicBean> comicList = null;
-
-    public IndexItemFragment(String title) {
-        super();
-        this.title = title;
-    }
 
     @Nullable
     @Override

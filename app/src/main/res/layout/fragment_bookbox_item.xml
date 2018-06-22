@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/bookbox_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/list_item_divider"
+        android:dividerHeight="1dp"
+        android:visibility="gone"></ListView>
+
+    <ImageView
+        android:id="@+id/bookbox_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bookbox_item_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/mkz_default_historynull" />
+
+    <TextView
+        android:id="@+id/bookbox_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bookbox_item_subtitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="@string/mkz_bookshelf_please_look_comic"
+        android:textColor="@color/mkz_gray8"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/bookbox_item_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bookbox_item_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/mkz_bookshelf_history_empty_tip"
+        android:textColor="@color/mkz_gray2"
+        android:textSize="11.0sp" />
+
+    <TextView
+        android:id="@+id/bookbox_item_button"
+        android:layout_width="140dp"
+        android:layout_height="40.0dip"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="22.0dip"
+        android:layout_marginRight="22.0dip"
+        android:background="@drawable/mkz_bg_btn_pay_disable"
+        android:gravity="center"
+        android:text="去看看"
+        android:textColor="@color/mkz_white"
+        android:textSize="14.0sp" />
+</RelativeLayout>

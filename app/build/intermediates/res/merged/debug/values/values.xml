@@ -21,13 +21,16 @@
     <color name="background_material_light">@color/material_grey_50</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
-    <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
-    <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
+    <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light
+    </color>
+    <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark
+    </color>
     <color name="bright_foreground_material_dark">@android:color/white</color>
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button">#ffffff</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
+    <color name="class_detail_status">#88000000</color>
     <color name="class_tab_line">#f3f3f3</color>
     <color name="class_tab_text_n">#8e8e8e</color>
     <color name="colorAccent">#ffff4081</color>
@@ -114,6 +117,7 @@
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
     <color name="notification_material_background_media_default_color">#ff424242</color>
     <color name="number">#ffcc00</color>
+    <color name="payopation_choose">#1aff7830</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
@@ -284,6 +288,9 @@
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_title_height">50dp</dimen>
+    <dimen name="class_tab_line_height">3dp</dimen>
+    <dimen name="class_tab_line_width">60dp</dimen>
     <dimen name="design_appbar_elevation">4dp</dimen>
     <dimen name="design_bottom_navigation_active_item_max_width">168dp</dimen>
     <dimen name="design_bottom_navigation_active_text_size">14sp</dimen>
@@ -352,6 +359,9 @@
     <dimen name="notification_subtext_size">13sp</dimen>
     <dimen name="notification_top_pad">10dp</dimen>
     <dimen name="notification_top_pad_large_text">5dp</dimen>
+    <dimen name="paytype_height">50dp</dimen>
+    <dimen name="point_margin">10dp</dimen>
+    <dimen name="point_size">10dp</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
     <item name="action_bar_activity_content" type="id"/>
@@ -413,6 +423,7 @@
     <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior">android.support.design.widget.BottomSheetBehavior</string>
     <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="class_detail_text">作品简介：《龙虎门》原名小流氓在这本漫画中，他创作了王小虎和王小龙两兄弟，而石黑龙则是在另一本著名漫画《柔道魔童》中的主角。故事大纲是为王小虎由大陆来到香港寻找亲人，结识了众多好兄弟，然后与各路反派大战，最后邪不胜正。之后开始走向长篇故事，带出了罗刹教之役，主角们冲出香港，远征日本，与日本第一黑帮罗刹教交手，后来更与世界的不同巨大黑帮爆发激烈的战斗，当时这点绝对是一大突破。《龙虎门》成为黄玉郎迄今为止最成功的漫画，其中塑造的王小龙、王小虎、石黑龙、火云邪神等形象有血有肉，深入人心。当年与《如来神掌》、《醉拳》、以及《中华英雄》并称为玉郎集团的“四大名著”</string>
     <string name="feeback_content">反馈内容将在一个工作日内审核处理\n申请退款会在3-5个工作日内原路返回\n请耐心等待…</string>
     <string name="loading">加载中...</string>
     <string name="loading_bottom">18才未満の方には販売しておりません</string>
@@ -714,6 +725,7 @@
     <string name="mkz_pagelist_error_tip">主人加载失败了</string>
     <string name="mkz_pause_cache_all">全部暂停</string>
     <string name="mkz_pay">打赏</string>
+    <string name="mkz_pay_ali">支付宝支付</string>
     <string name="mkz_pay_alipay">支付宝支付</string>
     <string name="mkz_pay_auth_denied">发送被拒绝</string>
     <string name="mkz_pay_confirm">确认支付</string>
@@ -986,10 +998,12 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
     </style>
     <style name="AppTheme.Full" parent="AppTheme.NoActionBar">
         <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="AppTheme.My" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/mkz_pic_boot_img1</item>
     </style>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
@@ -2039,13 +2053,18 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginLeft">5dp</item>
         <item name="android:layout_marginRight">5dp</item>
-        <item name="android:paddingLeft">10dp</item>
-        <item name="android:paddingRight">10dp</item>
-        <item name="android:paddingBottom">5dp</item>
-        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingTop">6dp</item>
         <item name="android:background">@drawable/selector_class_tab_bg</item>
         <item name="android:button">@null</item>
         <item name="android:textColor">@color/color_class_tab</item>
+    </style>
+    <style name="HorizontalLineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/class_tab_line</item>
     </style>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -2369,6 +2388,9 @@
     <style name="ThemeOverlay.AppCompat.Dialog" parent="Base.ThemeOverlay.AppCompat.Dialog"/>
     <style name="ThemeOverlay.AppCompat.Dialog.Alert" parent="Base.ThemeOverlay.AppCompat.Dialog.Alert"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
+    <style name="TranslucentTheme" parent="AppTheme">
+        <!--在Android 4.4之前的版本上运行，直接跟随系统主题-->
+    </style>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
     <style name="Widget.AppCompat.ActionBar.Solid" parent="Base.Widget.AppCompat.ActionBar.Solid">

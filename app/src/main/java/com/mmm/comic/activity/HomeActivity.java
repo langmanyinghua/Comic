@@ -31,6 +31,7 @@ public class HomeActivity extends AppCompatActivity implements CompoundButton.On
     private RadioButton bookbox_rb;
     private RadioButton mine_rb;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,6 +75,11 @@ public class HomeActivity extends AppCompatActivity implements CompoundButton.On
         mfragmentTransaction.hide(mineFragment);
         mfragmentTransaction.show(mfragment);
         mfragmentTransaction.commit();
+    }
+
+    public void switchIndex() {
+        switchFragment(indexFragment);
+        switchRadioButton(index_rb);
     }
 
     /**

@@ -45,7 +45,7 @@ public class IndexFragment extends Fragment {
 
         fragments = new ArrayList<>();
         for (String title : listTitles) {
-            fragments.add(new IndexItemFragment(title));
+            fragments.add(new IndexItemFragment());
         }
         setViewPager();
     }
@@ -68,8 +68,6 @@ public class IndexFragment extends Fragment {
             }
         });
         tablayout.setupWithViewPager(viewPager);
-        tablayout.setTabMode(TabLayout.MODE_FIXED);
-        tablayout.setTabMode(TabLayout.MODE_SCROLLABLE);
     }
 
     private void initEvent() {

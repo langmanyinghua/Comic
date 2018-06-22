@@ -10,6 +10,7 @@
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:background="@color/white"
         android:orientation="vertical"
         android:scrollbars="none">
 
@@ -41,6 +42,11 @@
                 android:dividerHeight="0.0dip"
                 android:listSelector="@android:color/transparent" />
 
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="4.0dip"
+                android:background="@color/mkz_gray5" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -50,13 +56,94 @@
                 android:textColor="@color/mkz_black3"
                 android:textSize="14.0sp" />
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/pay_method_recycler"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/wechat_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/paytype_height">
+
+                    <ImageView
+                        android:id="@+id/wechat_icon_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.0dip"
+                        android:src="@drawable/wechat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.0dip"
+                        android:layout_toRightOf="@+id/wechat_icon_iv"
+                        android:text="@string/mkz_pay_wx"
+                        android:textColor="@color/mkz_black1"
+                        android:textSize="15.0sp" />
+
+
+                    <ImageView
+                        android:id="@+id/wechat_choose_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12.0dip"
+                        android:src="@drawable/pay_choose" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:background="@color/mkz_gray5" />
+
+                <RelativeLayout
+                    android:id="@+id/alipay_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/paytype_height">
+
+                    <ImageView
+                        android:id="@+id/alipay_icon_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.0dip"
+                        android:src="@drawable/alipay" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.0dip"
+                        android:layout_toRightOf="@+id/alipay_icon_iv"
+                        android:text="@string/mkz_pay_ali"
+                        android:textColor="@color/mkz_black1"
+                        android:textSize="15.0sp" />
+
+
+                    <ImageView
+                        android:id="@+id/alipay_choose_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12.0dip"
+                        android:src="@drawable/pay_no_choose" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
                 android:layout_width="fill_parent"
-                android:layout_height="140.0dip"
-                android:layout_marginLeft="12.0dip"
-                android:layout_marginRight="12.0dip"
-                android:layout_marginTop="6.0dip" />
+                android:layout_height="10.0dip"
+                android:background="@color/mkz_gray5" />
 
             <TextView
                 android:id="@+id/btn_pay"
