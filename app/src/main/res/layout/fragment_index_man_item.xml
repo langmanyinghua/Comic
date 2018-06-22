@@ -29,14 +29,14 @@
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:singleLine="true"
+            android:maxLines="1"
             android:textColor="@color/mkz_black1"
             android:textSize="15.0sp" />
 
         <LinearLayout
             android:id="@+id/label_layout"
             android:layout_width="fill_parent"
-            android:layout_height="16.0dip"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="15.0dip"
             android:layout_marginTop="3.0dip"
             android:orientation="horizontal" />
@@ -45,7 +45,7 @@
             android:id="@+id/feature"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:singleLine="true"
+            android:maxLines="1"
             android:textColor="@color/mkz_black2"
             android:textSize="12.0sp" />
 
@@ -54,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="6.0dip"
-            android:singleLine="true"
+            android:maxLines="1"
             android:textColor="@color/mkz_black3"
             android:textSize="10.0sp" />
     </LinearLayout>

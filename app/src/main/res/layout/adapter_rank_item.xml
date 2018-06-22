@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/rank_item_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/rank_item_text_bg"
+            android:gravity="center"
+            android:text="总点击量：3.39亿"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/rank_item_number"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_rank_item_oval"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/mkz_black3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/rank_item_number"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="龙虎门"
+                android:textColor="@color/mkz_black1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="黄玉兰"
+                android:textColor="@color/mkz_black3"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="热血 玄幻 动作"
+                android:textColor="@color/mkz_black3"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="只有实力才能保护家人"
+                android:textColor="@color/mkz_black3"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

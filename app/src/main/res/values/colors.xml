@@ -152,4 +152,5 @@
     <color name="class_tab_line">#f3f3f3</color>
     <color name="class_tab_text_n">#8e8e8e</color>
     <color name="class_detail_status">#88000000</color>
+    <color name="rank_item_text_bg">#55000000</color>
 </resources>

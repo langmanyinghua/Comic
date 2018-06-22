@@ -52,15 +52,13 @@ public class IndexItemFragment extends Fragment {
             @Override
             public void convert(ViewHolder helper, ComicBean item) {
                 Glide.with(getActivity()).load(item.getThumb()).into((ImageView) helper.getView(R.id.image));
-                helper.setText(R.id.name,item.getTitle());
-                helper.setText(R.id.feature,item.getDetail());
-                helper.setText(R.id.author,item.getAuthor());
+                helper.setText(R.id.name, item.getTitle());
+                helper.setText(R.id.feature, item.getDetail());
+                helper.setText(R.id.author, item.getAuthor());
 
                 LinearLayout label_layout = helper.getView(R.id.label_layout);
                 label_layout.removeAllViews();
-                TextView tag = new TextView(getContext());
-                tag.setTextSize(7);
-                tag.setBackgroundResource(R.drawable.shape_tag);
+                TextView tag = (TextView) View.inflate(getContext(), R.layout.tv_index_tag, null);
                 tag.setText(item.getTag());
                 label_layout.addView(tag);
             }

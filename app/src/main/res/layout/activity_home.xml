@@ -37,7 +37,7 @@
     <LinearLayout
         android:id="@+id/main_buttom_ll"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_gravity="center_horizontal"
         android:background="@color/white"

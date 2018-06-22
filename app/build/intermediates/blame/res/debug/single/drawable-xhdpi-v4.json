@@ -36,12 +36,12 @@
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_login_bg.png"
     },
     {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_left_vip.png",
-        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_left_vip.png"
-    },
-    {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_tab_home_selected.png",
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_tab_home_selected.png"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_left_vip.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_left_vip.png"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_default_avatar.png",
@@ -64,6 +64,10 @@
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_rank_collection_unselected.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_rank_collection_unselected.png"
+    },
+    {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png",
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
@@ -82,6 +86,10 @@
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_fstitle.png",
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_fstitle.png"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_rank_exclusive_unselected.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_rank_exclusive_unselected.png"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_me_money2.png",
@@ -104,12 +112,12 @@
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_left_setting.png"
     },
     {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
-        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
-    },
-    {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_read.png",
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_read.png"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\home_mine_selectback.xml",
@@ -156,6 +164,10 @@
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_bg_card_down.9.png"
     },
     {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_rank_exclusive_selected.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_rank_exclusive_selected.png"
+    },
+    {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_tab_category_selected.png",
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_tab_category_selected.png"
     },
@@ -188,16 +200,20 @@
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
-        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_rank_ascension_unselected.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_rank_ascension_unselected.png"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_left_feedback.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_left_feedback.png"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_nav_back_red.png",
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_nav_back_red.png"
     },
     {
-        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_left_feedback.png",
-        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_left_feedback.png"
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_arrow_right.png",
@@ -212,12 +228,24 @@
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_rank_popular_selected.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_rank_popular_selected.png"
+    },
+    {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_rank_ticket_unselected.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_rank_ticket_unselected.png"
+    },
+    {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\alipay.png",
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\alipay.png"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_rank_ticket_selected.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_rank_ticket_selected.png"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_tab_bookshelf_no_selected.png",
@@ -286,6 +314,10 @@
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_me_vip2.png",
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_me_vip2.png"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_rank_latest_unselected.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_rank_latest_unselected.png"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
@@ -364,6 +396,10 @@
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_rank_ascension_selected.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_rank_ascension_selected.png"
+    },
+    {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
@@ -372,12 +408,20 @@
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_rank_popular_unselected.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_rank_popular_unselected.png"
+    },
+    {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_default_collnull.png",
         "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_default_collnull.png"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_rank_collection_selected.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_rank_collection_selected.png"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
@@ -406,6 +450,10 @@
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png",
         "source": "F:\\resource\\Comic\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mkz_ic_rank_latest_selected.png",
+        "source": "F:\\resource\\Comic\\app\\src\\main\\res\\drawable-xhdpi-v4\\mkz_ic_rank_latest_selected.png"
     },
     {
         "merged": "F:\\resource\\Comic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",

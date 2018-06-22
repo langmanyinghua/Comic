@@ -115,7 +115,7 @@ MERGED from [com.android.support:support-compat:25.3.1] F:\resource\Comic\app\bu
 	android:icon
 		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:10:9-43
 	android:theme
-		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:13:9-40
 	android:name
 		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:8:9-28
 activity#com.mmm.comic.activity.SplashActivity

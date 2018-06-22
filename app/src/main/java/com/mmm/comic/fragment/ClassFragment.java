@@ -44,6 +44,7 @@ public class ClassFragment extends Fragment {
     private int index;
     private LinearLayout mPullView;
     private View tabLine;
+    private TextView mTvPull;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -68,6 +69,7 @@ public class ClassFragment extends Fragment {
         mRecyclerView = view.findViewById(R.id.class_recyclerview);
         mPullView = view.findViewById(R.id.class_pull_view);
         tabLine = view.findViewById(R.id.class_tab_line);
+        mTvPull = view.findViewById(R.id.class_pull_tv);
         gridLayoutManager = new GridLayoutManager(getActivity(), 3);
         mRecyclerView.addItemDecoration(new SpaceClassItemDecoration(20, 3));
         mRecyclerView.setLayoutManager(gridLayoutManager);
@@ -140,9 +142,11 @@ public class ClassFragment extends Fragment {
                         if (!item.isCheck()) {
                             item.setCheck(true);
                             textList.get(index).setCheck(false);
+                            cate1 = item.getText().toString();
                             notifyItemChanged(index);
                             notifyItemChanged(position);
                             index = position;
+                            setPullText();
                         }
                     }
                 });
@@ -150,6 +154,12 @@ public class ClassFragment extends Fragment {
 
         };
         mHeadRecyclerView.setAdapter(tAdapter);
+    }
+
+    private String cate1;
+
+    private void setPullText() {
+        mTvPull.setText(cate1);
     }
 
     private void isCheck(TextView mButton, boolean isCheck) {

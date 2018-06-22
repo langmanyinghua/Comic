@@ -22,7 +22,7 @@ public class IndexFragment extends Fragment {
     private TabLayout tablayout;
     private ViewPager viewPager;
     private List<String> listTitles = null;
-    private ArrayList<IndexItemFragment> fragments = null;
+    private ArrayList<Fragment> fragments = null;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -44,9 +44,11 @@ public class IndexFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         fragments = new ArrayList<>();
-        for (String title : listTitles) {
-            fragments.add(new IndexItemFragment());
-        }
+        fragments.add(new IndexItemFragment());
+        fragments.add(new IndexItemFragment());
+        fragments.add(new IndexItemFragment());
+        fragments.add(new IndexUpdateFragment());
+        fragments.add(new RankFragment());
         setViewPager();
     }
 

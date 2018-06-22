@@ -11,6 +11,7 @@ import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -29,6 +30,7 @@ import com.bumptech.glide.Glide;
 import com.mmm.comic.APP;
 import com.mmm.comic.R;
 import com.mmm.comic.adapter.ClassPagerAdapter;
+import com.mmm.comic.bean.TabBead;
 import com.mmm.comic.fragment.ClassCatalogFragment;
 import com.mmm.comic.fragment.ClassDetailFragment;
 import com.mmm.comic.fragment.ClassFragment;
@@ -66,6 +68,7 @@ public class ClassDetailActivity extends AppCompatActivity implements View.OnCli
     private FragmentTransaction mfragmentTransaction;
     private RadioGroup mRgTabView;
     private RadioGroup mRgRedView;
+    private View statusView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -90,6 +93,7 @@ public class ClassDetailActivity extends AppCompatActivity implements View.OnCli
         mIbShareRed = (ImageButton) findViewById(R.id.class_tab_share_red);
         mTvTitleRed = (TextView) findViewById(R.id.class_tv_title_red);
         mRgTabView = (RadioGroup) findViewById(R.id.tab_view);
+        statusView = findViewById(R.id.status_view);
         mRbDetail = mRgTabView.findViewById(R.id.tab_detail);
         mRbCatalog = mRgTabView.findViewById(R.id.tab_catalog);
         mRgRedView = (RadioGroup) findViewById(R.id.red_tab);
@@ -134,7 +138,8 @@ public class ClassDetailActivity extends AppCompatActivity implements View.OnCli
         nestedScrollView.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
             @Override
             public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
-                if ((mHeadView.getHeight() - mTitleGoneView.getHeight()) > scrollY) {
+                if
+                        ((mHeadView.getHeight() - mTitleGoneView.getHeight() - statusView.getHeight()) > scrollY) {
                     if (mTabView.getVisibility() == View.VISIBLE) {
                         mTabView.setVisibility(View.GONE);
                     }

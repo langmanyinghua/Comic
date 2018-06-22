@@ -90,7 +90,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/app_title_height"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="@dimen/status_height"
                     android:gravity="center_vertical">
 
                     <ImageButton
@@ -198,8 +198,9 @@
         android:visibility="gone">
 
         <View
+            android:id="@+id/status_view"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="@dimen/status_height"
             android:background="@color/class_detail_status" />
 
         <RelativeLayout

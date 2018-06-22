@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/rank_popular"
+                style="@style/RankTabStyle"
+                android:drawableLeft="@drawable/selector_rank_popular"
+                android:text="人气榜" />
+        </LinearLayout>
+
+        <View
+            style="@style/VerticalLineStyle"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/rank_ticket"
+                style="@style/RankTabStyle"
+                android:drawableLeft="@drawable/selected_rank_ticket"
+                android:text="月票榜" />
+        </LinearLayout>
+
+        <View
+            style="@style/VerticalLineStyle"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/rank_collection"
+                style="@style/RankTabStyle"
+                android:drawableLeft="@drawable/selector_rank_collection"
+                android:text="收藏榜" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/HorizontalLineStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/rank_exclusive"
+                style="@style/RankTabStyle"
+                android:drawableLeft="@drawable/selector_rank_exclusive"
+                android:text="独家榜" />
+        </LinearLayout>
+
+        <View
+            style="@style/VerticalLineStyle"
+            android:layout_marginBottom="5dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/rank_latest"
+                style="@style/RankTabStyle"
+                android:drawableLeft="@drawable/selector_rank_latest"
+                android:text="新作榜" />
+        </LinearLayout>
+
+        <View
+            style="@style/VerticalLineStyle"
+            android:layout_marginBottom="5dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/rank_ascension"
+                style="@style/RankTabStyle"
+                android:drawableLeft="@drawable/selector_rank_ascension"
+                android:text="上升榜" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/HorizontalLineStyle" />
+</LinearLayout>

@@ -64,9 +64,37 @@
         <item name="android:button">@null</item>
         <item name="android:textColor">@color/color_class_tab</item>
     </style>
+
+    <style name="UpdateTabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/selector_update_tab_bg</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_update_tab</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="RankTabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_main_tab</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">5dp</item>
+    </style>
+
     <style name="HorizontalLineStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/class_tab_line</item>
+    </style>
+
+    <style name="VerticalLineStyle">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:background">@color/class_tab_line</item>
     </style>
 
