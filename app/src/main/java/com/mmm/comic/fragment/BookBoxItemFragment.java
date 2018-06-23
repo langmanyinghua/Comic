@@ -75,7 +75,7 @@ public class BookBoxItemFragment extends Fragment {
 
             bookbox_item_button.setVisibility(View.INVISIBLE);
         } else if ("订购".equals(title)) {
-            bookbox_item_icon.setImageResource(R.drawable.mkz_default_downnull);
+            bookbox_item_icon.setImageResource(R.drawable.mkz_default_buynull);
             bookbox_item_title.setText(getContext().getString(R.string.mkz_load_data_buy_list_empty));
             bookbox_item_subtitle.setText(getContext().getString(R.string.mkz_please_buy_comic));
 

@@ -31,7 +31,7 @@ import com.mmm.comic.util.ToastUtil;
 public class SplashActivity extends AppCompatActivity {
     private Handler handler = new Handler();
     private int INTERNET_CODE = 1000;
-    private int TIME = 4;
+    private int TIME = 1;
     private TextView count_down_tv;
     private ValueAnimator valueAnimator;
     private Boolean isJump = false;

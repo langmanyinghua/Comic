@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     pb_rl.setVisibility(View.GONE);
                     pay_rl.setVisibility(View.VISIBLE);
-                    main_background.setImageResource(R.drawable.pay);
+                   // main_background.setImageResource(R.drawable.pay);
                     setGameOption();
                 }
             }

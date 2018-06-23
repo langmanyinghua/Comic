@@ -6,22 +6,26 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.mmm.comic.APP;
 import com.mmm.comic.R;
 import com.mmm.comic.activity.ClassDetailActivity;
 import com.mmm.comic.base.recycler.SpaceClassItemDecoration;
 import com.mmm.comic.base.recycler.SpaceItemDecoration;
 import com.mmm.comic.bean.ComicBean;
 import com.mmm.comic.bean.TabBead;
+import com.mmm.comic.util.Constant;
 import com.mmm.comic.window.ClassTabWindow;
 import com.zhy.adapter.recyclerview.CommonAdapter;
 import com.zhy.adapter.recyclerview.MultiItemTypeAdapter;
@@ -44,7 +48,12 @@ public class ClassFragment extends Fragment {
     private int index;
     private LinearLayout mPullView;
     private View tabLine;
+
     private TextView mTvPull;
+    private String cate1 = "";
+    private String cate2 = "";
+    private String cate3 = "";
+    private String cate4 = "";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -71,7 +80,7 @@ public class ClassFragment extends Fragment {
         tabLine = view.findViewById(R.id.class_tab_line);
         mTvPull = view.findViewById(R.id.class_pull_tv);
         gridLayoutManager = new GridLayoutManager(getActivity(), 3);
-        mRecyclerView.addItemDecoration(new SpaceClassItemDecoration(20, 3));
+        mRecyclerView.addItemDecoration(new SpaceClassItemDecoration(15, 3));
         mRecyclerView.setLayoutManager(gridLayoutManager);
         mHeadView = View.inflate(getActivity(), R.layout.class_tab_head, null);
         RadioButton mTypeAll = mHeadView.findViewById(R.id.tab_type_all);
@@ -83,22 +92,13 @@ public class ClassFragment extends Fragment {
     }
 
     private void initData() {
-        List<ComicBean> list = new ArrayList<>();
-        for (int i = 0; i < 21; i++) {
-            ComicBean comic = new ComicBean();
-            comic.setTitle("斗破苍穹");
-            comic.setThumb("https://i1s.kkmh.com/image/180429/i2immgnut.webp-w750.jpg");
-            comic.setDetail("更新至36集");
-            list.add(comic);
-        }
+        List<ComicBean> list = APP.application.comicList;
         mAdapter = new CommonAdapter<ComicBean>(getActivity(), R.layout.adapter_class, list) {
-
-
             @Override
             protected void convert(ViewHolder holder, ComicBean item, int position) {
                 holder.setText(R.id.item_class_name, item.getTitle());
-                holder.setText(R.id.item_class_text, item.getDetail());
-                Glide.with(getActivity()).load(item.getThumb()).into((ImageView) holder.getView(R.id.item_class_image));
+                holder.setText(R.id.item_class_text, item.getUpdatetag());
+                Glide.with(getActivity()).load(item.getThumb()).skipMemoryCache(true).into((ImageView) holder.getView(R.id.item_class_image));
             }
         };
         setHeadView();
@@ -129,6 +129,21 @@ public class ClassFragment extends Fragment {
         textList.add(new TabBead("热血", false));
         textList.add(new TabBead("架空", false));
         textList.add(new TabBead("后宫", false));
+        textList.add(new TabBead("耽美", false));
+        textList.add(new TabBead("玄幻", false));
+        textList.add(new TabBead("悬疑", false));
+        textList.add(new TabBead("恐怖", false));
+        textList.add(new TabBead("灵异", false));
+        textList.add(new TabBead("动作", false));
+        textList.add(new TabBead("科幻", false));
+        textList.add(new TabBead("战争", false));
+        textList.add(new TabBead("古风", false));
+        textList.add(new TabBead("穿越", false));
+        textList.add(new TabBead("竞技", false));
+        textList.add(new TabBead("百合", false));
+        textList.add(new TabBead("励志", false));
+        textList.add(new TabBead("同人", false));
+        textList.add(new TabBead("真人", false));
         index = 0;
         CommonAdapter<TabBead> tAdapter = new CommonAdapter<TabBead>(getActivity(), R.layout.adapter_tab_text, textList) {
             @Override
@@ -146,6 +161,8 @@ public class ClassFragment extends Fragment {
                             notifyItemChanged(index);
                             notifyItemChanged(position);
                             index = position;
+
+                            cate1 = position == 0 ? "" : item.getText();
                             setPullText();
                         }
                     }
@@ -154,12 +171,28 @@ public class ClassFragment extends Fragment {
 
         };
         mHeadRecyclerView.setAdapter(tAdapter);
+
+
     }
 
-    private String cate1;
-
     private void setPullText() {
-        mTvPull.setText(cate1);
+        String step = "";
+        if (!TextUtils.isEmpty(cate1)) {
+            step = cate1 + ".";
+        }
+        if (!TextUtils.isEmpty(cate2)) {
+            step += cate2 + ".";
+        }
+        if (!TextUtils.isEmpty(cate3)) {
+            step += cate3 + ".";
+        }
+        if (!TextUtils.isEmpty(cate4)) {
+            step += cate4 + ".";
+        }
+        if (step.endsWith(".")) {
+            step = step.substring(0, step.length() - 1);
+        }
+        mTvPull.setText(step);
     }
 
     private void isCheck(TextView mButton, boolean isCheck) {
@@ -210,6 +243,41 @@ public class ClassFragment extends Fragment {
                 ClassTabWindow.getInstance(getActivity()).onShow(tabLine);
             }
         });
+
+        // 第二列
+        ((RadioGroup) mHeadView.findViewById(R.id.case2_rg)).setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == R.id.tab_type_lianzai || i == R.id.tab_type_wanjie) {
+                    RadioButton radioButton = mHeadView.findViewById(i);
+                    cate2 = radioButton.getText().toString();
+                    setPullText();
+                }
+            }
+        });
+        // 第三列
+        ((RadioGroup) mHeadView.findViewById(R.id.case3_rg)).setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == R.id.tab_cost_fufei || i == R.id.tab_cost_mianfei || i == R.id.tab_cost_vip) {
+                    RadioButton radioButton = mHeadView.findViewById(i);
+                    cate3 = radioButton.getText().toString();
+                    setPullText();
+                }
+            }
+        });
+
+
+        // 第四列
+        ((RadioGroup) mHeadView.findViewById(R.id.case4_rg)).setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                RadioButton radioButton = mHeadView.findViewById(i);
+                cate4 = radioButton.getText().toString();
+                setPullText();
+            }
+        });
+        ((RadioButton) mHeadView.findViewById(R.id.tab_type_hot)).setChecked(true);
     }
 
 

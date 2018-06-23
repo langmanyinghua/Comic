@@ -20,7 +20,7 @@
             <RadioButton
                 android:id="@+id/update_tab1"
                 style="@style/UpdateTabStyle"
-                android:text="今天" />
+                android:text="今日" />
         </LinearLayout>
 
         <LinearLayout
@@ -32,7 +32,7 @@
             <RadioButton
                 android:id="@+id/update_tab2"
                 style="@style/UpdateTabStyle"
-                android:text="昨天" />
+                android:text="昨日" />
         </LinearLayout>
 
         <LinearLayout

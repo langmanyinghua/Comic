@@ -1,5 +1,6 @@
 package com.mmm.comic.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -14,9 +15,13 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.mmm.comic.APP;
 import com.mmm.comic.R;
+import com.mmm.comic.activity.ClassDetailActivity;
 import com.mmm.comic.base.recycler.SpaceItemDecoration;
 import com.mmm.comic.base.recycler.SpaceRankItemDecoration;
+import com.mmm.comic.bean.ComicBean;
+import com.mmm.comic.util.CommUtil;
 import com.mmm.comic.window.RankTabWindow;
 import com.zhy.adapter.recyclerview.CommonAdapter;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
@@ -90,11 +95,47 @@ public class RankFragment extends Fragment implements View.OnClickListener {
         for (int i = 0; i < 20; i++) {
             list.add((i + 1) + "");
         }
-        CommonAdapter<String> mAdapter = new CommonAdapter<String>(getActivity(), R.layout.adapter_rank_item, list) {
+        List<ComicBean> comicBeanList = APP.application.comicList;
+
+        CommonAdapter<ComicBean> mAdapter = new CommonAdapter<ComicBean>(getActivity(), R.layout.adapter_rank_item, comicBeanList) {
             @Override
-            protected void convert(ViewHolder holder, String s, int position) {
-                Glide.with(getActivity()).load("https://i1s.kkmh.com/image/180429/i2immgnut.webp-w750.jpg").into((ImageView) holder.getView(R.id.rank_item_iv));
-                holder.setText(R.id.rank_item_number, s);
+            protected void convert(ViewHolder holder, ComicBean item, int position) {
+                Glide.with(getActivity()).load(item.getThumb()).into((ImageView) holder.getView(R.id.rank_item_iv));
+
+                TextView number_tv = holder.getView(R.id.rank_item_number);
+                ImageView number_iv = holder.getView(R.id.rank_item_number_iv);
+                if (position == 1) {
+                    number_tv.setVisibility(View.GONE);
+
+                    number_iv.setVisibility(View.VISIBLE);
+                    number_iv.setImageResource(R.drawable.mkz_ic_rank1);
+                } else if (position == 2) {
+                    number_tv.setVisibility(View.GONE);
+
+                    number_iv.setVisibility(View.VISIBLE);
+                    number_iv.setImageResource(R.drawable.mkz_ic_rank2);
+                } else if (position == 3) {
+                    number_tv.setVisibility(View.GONE);
+
+                    number_iv.setVisibility(View.VISIBLE);
+                    number_iv.setImageResource(R.drawable.mkz_ic_rank3);
+                } else {
+                    number_tv.setVisibility(View.VISIBLE);
+                    number_tv.setText(position + "");
+
+                    number_iv.setVisibility(View.GONE);
+                }
+                holder.setText(R.id.title, item.getTitle());
+                holder.setText(R.id.author, item.getAuthor());
+                holder.setText(R.id.tag, item.getTag());
+                holder.setText(R.id.detail, CommUtil.SubContent(item.getDetail()));
+
+                holder.getView(R.id.root_ll).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        getActivity().startActivity(new Intent(getActivity(), ClassDetailActivity.class));
+                    }
+                });
             }
         };
         HeaderAndFooterWrapper mHeaderAndFooterWrapper = new HeaderAndFooterWrapper(mAdapter);

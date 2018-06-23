@@ -153,7 +153,9 @@ ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:25:9-73
 	android:name
 		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:25:19-70
 activity#com.mmm.comic.activity.HomeActivity
-ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:26:9-72
+ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:26:9-115
+	android:windowSoftInputMode
+		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:26:71-112
 	android:name
 		ADDED from F:\resource\Comic\app\src\main\AndroidManifest.xml:26:19-69
 activity#com.mmm.comic.activity.VIPActivity

@@ -1,5 +1,6 @@
 package com.mmm.comic.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
@@ -16,13 +17,19 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.mmm.comic.APP;
 import com.mmm.comic.R;
+import com.mmm.comic.activity.ClassDetailActivity;
 import com.mmm.comic.base.recycler.SpaceClassItemDecoration;
 import com.mmm.comic.base.recycler.SpaceUpdateItemDecoration;
 import com.mmm.comic.bean.ComicBean;
+import com.mmm.comic.util.CommUtil;
+import com.mmm.comic.util.SystemUtil;
+import com.mmm.comic.util.ToastUtil;
 import com.zhy.adapter.recyclerview.CommonAdapter;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -54,10 +61,15 @@ public class IndexUpdateFragment extends Fragment implements View.OnClickListene
         RadioButton mRButton1 = view.findViewById(R.id.update_tab1);
         RadioButton mRButton2 = view.findViewById(R.id.update_tab2);
         RadioButton mRButton3 = view.findViewById(R.id.update_tab3);
+        mRButton3.setText(CommUtil.GetWeek(2));
         RadioButton mRButton4 = view.findViewById(R.id.update_tab4);
+        mRButton4.setText(CommUtil.GetWeek(3));
         RadioButton mRButton5 = view.findViewById(R.id.update_tab5);
+        mRButton5.setText(CommUtil.GetWeek(4));
         RadioButton mRButton6 = view.findViewById(R.id.update_tab6);
+        mRButton6.setText(CommUtil.GetWeek(5));
         RadioButton mRButton7 = view.findViewById(R.id.update_tab7);
+        mRButton7.setText(CommUtil.GetWeek(6));
         mRButton1.setOnClickListener(this);
         mRButton2.setOnClickListener(this);
         mRButton3.setOnClickListener(this);
@@ -90,9 +102,20 @@ public class IndexUpdateFragment extends Fragment implements View.OnClickListene
             @Override
             protected void convert(ViewHolder helper, ComicBean item, int position) {
                 Glide.with(getActivity()).load(item.getThumb()).into((ImageView) helper.getView(R.id.update_item_iv));
+                helper.setText(R.id.title, item.getTitle());
+                helper.setText(R.id.update_tag_tv, item.getUpdatetag());
+
+
+                helper.getView(R.id.root_ll).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        getActivity().startActivity(new Intent(getActivity(), ClassDetailActivity.class));
+                    }
+                });
             }
         };
         mRecyclerView.setAdapter(mAdapter);
+
     }
 
     private void switchTab(int index) {

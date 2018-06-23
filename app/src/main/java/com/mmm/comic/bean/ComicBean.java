@@ -8,6 +8,8 @@ import java.util.List;
  */
 public class ComicBean implements Serializable{
     private String title;
+    private String subtitle;
+    private String updatetag;
     private String thumb;
     private String author;
     private String tag;
@@ -74,8 +76,26 @@ public class ComicBean implements Serializable{
         this.sections = sections;
     }
 
-    public ComicBean(String title, String thumb, String author, String tag, String heat, String detail, List<SectionBean> sections) {
+    public String getSubtitle() {
+        return subtitle;
+    }
+
+    public void setSubtitle(String subtitle) {
+        this.subtitle = subtitle;
+    }
+
+    public String getUpdatetag() {
+        return updatetag;
+    }
+
+    public void setUpdatetag(String updatetag) {
+        this.updatetag = updatetag;
+    }
+
+    public ComicBean(String title, String subtitle, String updatetag, String thumb, String author, String tag, String heat, String detail, List<SectionBean> sections) {
         this.title = title;
+        this.subtitle = subtitle;
+        this.updatetag = updatetag;
         this.thumb = thumb;
         this.author = author;
         this.tag = tag;
@@ -88,6 +108,8 @@ public class ComicBean implements Serializable{
     public String toString() {
         return "ComicBean{" +
                 "title='" + title + '\'' +
+                ", subtitle='" + subtitle + '\'' +
+                ", updatetag='" + updatetag + '\'' +
                 ", thumb='" + thumb + '\'' +
                 ", author='" + author + '\'' +
                 ", tag='" + tag + '\'' +
