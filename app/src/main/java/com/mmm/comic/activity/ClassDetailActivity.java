@@ -1,5 +1,7 @@
 package com.mmm.comic.activity;
 
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
@@ -11,6 +13,7 @@ import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
@@ -36,6 +39,10 @@ import com.mmm.comic.fragment.ClassDetailFragment;
 import com.mmm.comic.fragment.ClassFragment;
 import com.mmm.comic.fragment.IndexFragment;
 import com.mmm.comic.fragment.MineFragment;
+import com.mmm.comic.util.BlurTransformation;
+import com.mmm.comic.util.CommUtil;
+import com.mmm.comic.util.Constant;
+import com.mmm.comic.util.PreferenceUtils;
 import com.mmm.comic.view.WrapContentHeightViewPager;
 import com.zhy.adapter.recyclerview.CommonAdapter;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
@@ -57,6 +64,7 @@ public class ClassDetailActivity extends AppCompatActivity implements View.OnCli
     private AlphaAnimation alphaAnimation;
     private ImageButton mIbDownRed;
     private ImageButton mIbShareRed;
+    private ImageView bg_iv;
     private TextView mTvTitleRed;
     private RadioButton mRbDetail;
     private RadioButton mRbCatalog;
@@ -69,6 +77,11 @@ public class ClassDetailActivity extends AppCompatActivity implements View.OnCli
     private RadioGroup mRgTabView;
     private RadioGroup mRgRedView;
     private View statusView;
+    private TextView read_tv;
+
+    private String id;
+    private TextView collection_tv;
+    private Boolean isCollection = false;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -103,6 +116,15 @@ public class ClassDetailActivity extends AppCompatActivity implements View.OnCli
         mTabView = (LinearLayout) findViewById(R.id.class_tab_view);
         ImageView mIvHeadIcon = (ImageView) findViewById(R.id.class_detail_head_icon);
         Glide.with(this).load("https://i1s.kkmh.com/image/180429/i2immgnut.webp-w750.jpg").into(mIvHeadIcon);
+
+        bg_iv = (ImageView) findViewById(R.id.bg_iv);
+        Glide.with(this).load("https://i1s.kkmh.com/image/180429/i2immgnut.webp-w750.jpg")
+                .transform(new BlurTransformation(this, 100))
+                .crossFade()
+                .into(bg_iv);
+
+        read_tv = (TextView) findViewById(R.id.read_tv);
+        collection_tv = (TextView) findViewById(R.id.collection_tv);
     }
 
     private void initData() {
@@ -115,13 +137,13 @@ public class ClassDetailActivity extends AppCompatActivity implements View.OnCli
         List<RadioButton> radioButtonReds = new ArrayList<>();
         radioButtonReds.add(mRbDetailRed);
         radioButtonReds.add(mRbCatalogRed);
-        mRbDetail.setChecked(true);
-        mRbDetailRed.setChecked(true);
+        mRbCatalog.setChecked(true);
+        mRbCatalogRed.setChecked(true);
 
         mfragmentManager = getSupportFragmentManager();
         catalongFragment = (ClassCatalogFragment) mfragmentManager.findFragmentById(R.id.class_catalog_fragment);
         detailFragment = (ClassDetailFragment) mfragmentManager.findFragmentById(R.id.class_detail_fragment);
-        switchFragment(detailFragment);
+        switchFragment(catalongFragment);
     }
 
     public void switchFragment(Fragment mfragment) {
@@ -138,8 +160,7 @@ public class ClassDetailActivity extends AppCompatActivity implements View.OnCli
         nestedScrollView.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
             @Override
             public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
-                if
-                        ((mHeadView.getHeight() - mTitleGoneView.getHeight() - statusView.getHeight()) > scrollY) {
+                if ((mHeadView.getHeight() - mTitleGoneView.getHeight() - statusView.getHeight()) > scrollY) {
                     if (mTabView.getVisibility() == View.VISIBLE) {
                         mTabView.setVisibility(View.GONE);
                     }
@@ -180,6 +201,38 @@ public class ClassDetailActivity extends AppCompatActivity implements View.OnCli
                 mRbCatalog.setChecked(true);
             }
         });
+
+        read_tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ClassDetailActivity.this, VIPActivity.class));
+            }
+        });
+
+        // 处理收藏功能
+        id = getIntent().getStringExtra("id");
+        id = "1";
+        if (!TextUtils.isEmpty(id)) {
+            isCollection = PreferenceUtils.getPrefBoolean(this, Constant.Collection_Head + id, false);
+            if (isCollection) {
+                CommUtil.SetTextViewCompoundDrawableTop(this, R.drawable.mkz_ic_detail_coll_on, collection_tv);
+            }
+        }
+
+        collection_tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isCollection) {
+                    PreferenceUtils.setPrefBoolean(ClassDetailActivity.this, Constant.Collection_Head + id, false);
+                    isCollection = false;
+                    CommUtil.SetTextViewCompoundDrawableTop(ClassDetailActivity.this, R.drawable.mkz_ic_detail_coll_off, collection_tv);
+                } else {
+                    PreferenceUtils.setPrefBoolean(ClassDetailActivity.this, Constant.Collection_Head + id, true);
+                    isCollection = true;
+                    CommUtil.SetTextViewCompoundDrawableTop(ClassDetailActivity.this, R.drawable.mkz_ic_detail_coll_on, collection_tv);
+                }
+            }
+        });
     }
 
     @Override
@@ -208,4 +261,6 @@ public class ClassDetailActivity extends AppCompatActivity implements View.OnCli
         translateAnimation.setDuration(500);
         return translateAnimation;
     }
+
+
 }

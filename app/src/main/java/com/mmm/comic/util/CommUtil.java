@@ -1,6 +1,11 @@
 package com.mmm.comic.util;
 
+import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
+import android.widget.TextView;
+
+import com.mmm.comic.R;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -24,6 +29,11 @@ public class CommUtil {
         }
     }
 
+    /**
+     * 获取星期信息
+     * @param step
+     * @return
+     */
     public static String GetWeek(int step) {
         Calendar c = Calendar.getInstance();
         Date date = new Date();
@@ -57,5 +67,17 @@ public class CommUtil {
                 break;
         }
         return result;
+    }
+
+    /**
+     * 设置文字的顶部图标
+     * @param context
+     * @param drawable
+     * @param textView
+     */
+    public static void SetTextViewCompoundDrawableTop(Context context, int drawable, TextView textView){
+        Drawable top = context.getResources().getDrawable(drawable);
+        top.setBounds(0, 0, top.getMinimumWidth(), top.getMinimumHeight());// 一定要设置setBounds();
+        textView.setCompoundDrawables(null, top, null, null);
     }
 }

@@ -53,7 +53,7 @@ public class ClassFragment extends Fragment {
     private String cate1 = "";
     private String cate2 = "";
     private String cate3 = "";
-    private String cate4 = "";
+    private String cate4 = "热门";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -251,10 +251,14 @@ public class ClassFragment extends Fragment {
                 if (i == R.id.tab_type_lianzai || i == R.id.tab_type_wanjie) {
                     RadioButton radioButton = mHeadView.findViewById(i);
                     cate2 = radioButton.getText().toString();
-                    setPullText();
+
+                } else {
+                    cate2 = "";
                 }
+                setPullText();
             }
         });
+
         // 第三列
         ((RadioGroup) mHeadView.findViewById(R.id.case3_rg)).setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -262,8 +266,10 @@ public class ClassFragment extends Fragment {
                 if (i == R.id.tab_cost_fufei || i == R.id.tab_cost_mianfei || i == R.id.tab_cost_vip) {
                     RadioButton radioButton = mHeadView.findViewById(i);
                     cate3 = radioButton.getText().toString();
-                    setPullText();
+                } else {
+                    cate3 = "";
                 }
+                setPullText();
             }
         });
 
@@ -277,7 +283,6 @@ public class ClassFragment extends Fragment {
                 setPullText();
             }
         });
-        ((RadioButton) mHeadView.findViewById(R.id.tab_type_hot)).setChecked(true);
     }
 
 

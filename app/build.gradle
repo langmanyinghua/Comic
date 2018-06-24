@@ -31,4 +31,7 @@ dependencies {
 
     compile 'com.zhy:base-rvadapter:3.0.3'
     compile 'com.zhy:base-adapter:3.0.3'
+
+    compile 'com.ms-square:expandableTextView:0.1.4'
+
 }
